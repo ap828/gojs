@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html ng-app>
+<head>
+	<script type="text/javascript" scr="angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+<div ng-init="list1=[{name:'n1',r_no:1},
+					{name:'n2',r_no:2}]">
+	<label>Name</label>
+	<input type="text" ng-model="name">
+	<h1 ng-bind="name"></h1>
+<p>List of names:
+</p>
+<li ng-repeat="l in list1">
+	{{'Name:'+l.name+'Roll no'+l.r_no}},</li></ol>
+</div>
+</div>
+</body>
+</html>
